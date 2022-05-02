@@ -28,14 +28,6 @@ app.use( "/teachers",  teachersRouter )
 app.use("/users", usersRouter)
 
 
-app.get("/teachers", (req, res) => {
-  res.json(teachers)
-})
-
-app.get("/users", (req, res) => {
-  res.json(users)
-})
-
 // STARTUP API and listen for incoming requests on PORT 5000
 const PORT = 5000
 app.listen( PORT, () => {
