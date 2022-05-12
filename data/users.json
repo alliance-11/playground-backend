@@ -5,22 +5,25 @@
         "profession": "Web Dev Consultant",
         "hobby": "playing computer games",
         "email": "gael@gmail.com",
+        "password": "g123",
         "city": "Berlin"
     },
     {
-        "id": "2",
-        "name": "Robert",
-        "profession": "Web Dev Trainer",
-        "hobby": "reading",
-        "email": "robert@gmail.com",
-        "city": "Berlin"
+      "id": "2",
+      "name": "Robert",
+      "profession": "Web Dev Trainer",
+      "hobby": "reading",
+      "email": "robert@gmail.com",
+      "password": "r123",
+      "city": "Berlin"
     },
     {
-        "id": "3",
-        "name": "Elisa",
-        "profession": "JavaScript Engineer",
-        "hobby": "JavaScript",
-        "email": "elisa@gmail.com",
-        "city": "Hamburg"
+      "id": "3",
+      "name": "Elisa",
+      "profession": "JavaScript Engineer",
+      "hobby": "JavaScript",
+      "email": "elisa@gmail.com",
+      "password": "e123",
+      "city": "Hamburg"
     }
 ]

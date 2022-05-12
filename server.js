@@ -2,6 +2,7 @@
 // const react = require("react")
 
 const express = require("express")
+const session = require("express-session")
 const teachers = require("./data/teachers.json")
 const users = require("./data/users.json")
 const studentsRouter = require("./routes/students.router")
@@ -9,6 +10,13 @@ const teachersRouter = require("./routes/teachers.router")
 const usersRouter = require("./routes/users.router")
 
 const app = express()
+
+// register SESSION middleware
+app.use( session({
+  secret: 'daHolySecret',
+  saveUninitialized: false // do not create a session on FIRST request!
+    // only create a session (later) if user provided correct EMAIL & PASSOWRD
+}) )
 
 // HOME ROUTE
 app.get("/", (req, res) => {
@@ -19,6 +27,7 @@ app.get("/", (req, res) => {
     <div>Users: <a href="/users">Hier</a></div>
   `)
 })
+
 
 // app.use => implement router
 
